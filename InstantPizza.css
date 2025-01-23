@@ -1,9 +1,11 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
 
 * {
     font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -20,17 +22,22 @@ body {
 header.header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 header.header img {
-    width: 300px;
+    width: 150px;
 }
 
 section.top-page {
-    background: url('image/pizzatop.jpg');
+    background: url('image/pizzatop.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* page de bienvenue (landing page) */
@@ -42,27 +49,25 @@ section.top-page {
 
 .big-title {
     color: rgb(203, 149, 0);
-    font-size:  120px;
+    font-size: 4rem; /* Ajustement pour une meilleure compatibilité */
     font-family: 'Abril FatFace', cursive;
     font-weight: 100;
-    width: 60%;
+    max-width: 100%;
+    text-align: center;
 }
 
-.A-Propos{
+.A-Propos {
     color: white;
-    font-size: 50px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.Resume{
+.Resume {
     color: white;
-    font-size: 30px;
-}
-
-.scroll-down {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    position: absolute;
-    bottom: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* menu de navigation */
@@ -71,42 +76,38 @@ nav.nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 600px;
-    margin-left: 30px;
+    gap: 20px;
 }
 
 nav.nav li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.2rem;
 }
 
 /* services */
-
-.scroll-down{
-    background-color: black;
-}
-
 
 .services {
     display: flex;
     justify-content: space-evenly;
     margin: 50px;
     background-color: black;
-    color: black;
+    flex-wrap: wrap; /* Permet de s'adapter à l'écran */
 }
 
 .service-item {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
+    text-align: center;
 }
 
 .delivery-icon {
-    font-size: 50px;
+    font-size: 3rem;
     color: #bd9800;
+    margin-bottom: 10px;
 }
-
 
 .service-details {
     font-weight: 600;
@@ -118,12 +119,13 @@ nav.nav li a {
 /* best sells */
 
 .section-title {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-family: 'Abril FatFace', cursive;
     font-weight: 100;
     position: relative;
     color: white;
-    background-color: black;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .section-title::before {
@@ -132,141 +134,68 @@ nav.nav li a {
     background-color: #bd9800;
     width: 50px;
     height: 7px;
-    bottom: 0;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .bests-items {
-    margin: 100px;
+    margin: 50px;
     background-color: black;
 }
 
 .best-pizza {
-    min-height: auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .pizza-box {
     position: relative;
     background-size: cover;
     background-position: center;
-}
-
-.no-grid {
-    min-width: 400px;
-    height: 1500px;
-    flex: 1;
-}
-
-.pizza1 {
-    background-image: url(image/carte1.jpg);
-}
-
-.pizza2 {
-    background-image: url(image/carte2.jpg);
-}
-
-
-.pizza-details {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: #ffffffdf;
-    padding: 5px 20px;
-}
-
-.pizza-name {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 3px;
-}
-
-.pizza-price {
-    color: #bd9800;
-    line-height: 3px;
-    font-size: 14px;
-    font-weight: 800;
+    min-width: 300px;
+    height: 300px;
 }
 
 /* nos pizzas */
 
 .all-products {
-    margin: 100px;
+    margin: 50px;
 }
 
 .pizza-grid {
     display: grid;
-    min-height: 150vh;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.pizza-grid1 {
-    background-image: url(image/margarita.jpg);
-    grid-column: 1/3;
-    grid-row: 1/3;
+.pizza-grid .pizza-box {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
 }
-
-.pizza-grid2 {
-    background-image: url(image/Royal.jpg);
-    grid-column: 3/5;
-}
-
-.pizza-grid3 {
-    background-image: url(image/chevremiel.jpg);
-    grid-column: 3/5;
-}
-
-.pizza-grid4 {
-    background-image: url(image/diovola.jpg);
-    grid-column: 1;
-    grid-row: 3/5;
-}
-
-.pizza-grid5 {
-    background-image: url(image/burger.jpg);
-    grid-column: 2/4;
-    grid-row: 3/5;
-}
-
-.pizza-grid6 {
-    background-image: url(image/pizzasaumon.jpg);
-    grid-column: 4;
-    grid-row: 3/5;
-}
-
 
 /* nous contacter */
 
-.surplace{
-    color: white;
-    text-align: center; /* Centrer le texte horizontalement */
-    font-weight: bold; /* Mettre le texte en gras */
-    font-size: 30px; /
-}
-
-.numero{
+.surplace,
+.numero,
+.adresse {
     color: #bd9800;
-    text-align: center; /* Centrer le texte horizontalement */
-    font-weight: bold; /* Mettre le texte en gras */
-    font-size: 30px; /
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
-
-.adresse{
-    color: #bd9800;
-    text-align: center; /* Centrer le texte horizontalement */
-    font-weight: bold; /* Mettre le texte en gras */
-    font-size: 30px; /
-}
-
 
 /* pied de page */
 
 footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin: 20px 100px;
+    margin: 20px;
     font-weight: 600;
     background-color: black;
     color: white;
@@ -275,4 +204,73 @@ footer {
 footer a.cgv {
     text-decoration: none;
     color: white;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header.header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header.header img {
+        width: 120px;
+    }
+
+    nav.nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .big-title {
+        font-size: 2.5rem;
+    }
+
+    .A-Propos {
+        font-size: 1.5rem;
+    }
+
+    .Resume {
+        font-size: 1rem;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-item {
+        margin: 20px 0;
+    }
+
+    .pizza-box {
+        height: 200px;
+        min-width: 100%;
+    }
+
+    .pizza-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .big-title {
+        font-size: 2rem;
+    }
+
+    .A-Propos,
+    .Resume {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .surplace,
+    .numero,
+    .adresse {
+        font-size: 1rem;
+    }
 }
