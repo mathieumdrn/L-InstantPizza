@@ -1,0 +1,278 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background-color: black;
+}
+
+/* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 300px;
+}
+
+section.top-page {
+    background: url('image/pizzatop.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+}
+
+/* page de bienvenue (landing page) */
+
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: rgb(203, 149, 0);
+    font-size:  120px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    width: 60%;
+}
+
+.A-Propos{
+    color: white;
+    font-size: 50px;
+}
+
+.Resume{
+    color: white;
+    font-size: 30px;
+}
+
+.scroll-down {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 600px;
+    margin-left: 30px;
+}
+
+nav.nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* services */
+
+.scroll-down{
+    background-color: black;
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+    background-color: black;
+    color: black;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #bd9800;
+}
+
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* best sells */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+    color: white;
+    background-color: black;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #bd9800;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 100px;
+    background-color: black;
+}
+
+.best-pizza {
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pizza-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 400px;
+    height: 1500px;
+    flex: 1;
+}
+
+.pizza1 {
+    background-image: url(image/carte1.jpg);
+}
+
+.pizza2 {
+    background-image: url(image/carte2.jpg);
+}
+
+
+.pizza-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #ffffffdf;
+    padding: 5px 20px;
+}
+
+.pizza-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.pizza-price {
+    color: #bd9800;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* nos pizzas */
+
+.all-products {
+    margin: 100px;
+}
+
+.pizza-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4, 300px);
+}
+
+.pizza-grid1 {
+    background-image: url(image/margarita.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.pizza-grid2 {
+    background-image: url(image/Royal.jpg);
+    grid-column: 3/5;
+}
+
+.pizza-grid3 {
+    background-image: url(image/chevremiel.jpg);
+    grid-column: 3/5;
+}
+
+.pizza-grid4 {
+    background-image: url(image/diovola.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.pizza-grid5 {
+    background-image: url(image/burger.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.pizza-grid6 {
+    background-image: url(image/pizzasaumon.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+
+/* nous contacter */
+
+.surplace{
+    color: white;
+    text-align: center; /* Centrer le texte horizontalement */
+    font-weight: bold; /* Mettre le texte en gras */
+    font-size: 30px; /
+}
+
+.numero{
+    color: #bd9800;
+    text-align: center; /* Centrer le texte horizontalement */
+    font-weight: bold; /* Mettre le texte en gras */
+    font-size: 30px; /
+}
+
+.adresse{
+    color: #bd9800;
+    text-align: center; /* Centrer le texte horizontalement */
+    font-weight: bold; /* Mettre le texte en gras */
+    font-size: 30px; /
+}
+
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: white;
+}
