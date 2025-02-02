@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -23,33 +23,26 @@ header.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5clamp();
+    padding: clamp(10px, 5vw, 50px);
 }
 
 header.header img {
-    width: 50clamp();
+    width: clamp(80px, 10vw, 150px);
     max-width: 100%;
 }
 
 /* 📌 Menu de navigation responsive */
 
-nav.nav {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 20clamp();
-}
-
 nav.nav ul {
     display: flex;
     list-style: none;
-    gap: 20clamp();
+    gap: clamp(10px, 2vw, 20px);
 }
 
 nav.nav li a {
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
 }
 
 /* Menu burger (mobile) */
@@ -66,13 +59,13 @@ nav.nav li a {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 60clamp();
+        top: 60px;
         left: 0;
         width: 100%;
         text-align: center;
-        padding: 20clamp() 0;
+        padding: 20px 0;
     }
-
+    
     nav.nav ul.show {
         display: flex;
     }
@@ -88,33 +81,24 @@ section.top-page {
     background: url('image/pizzatop.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
-    padding: 25clamp();
+    padding: clamp(20px, 5vw, 50px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .big-title {
     color: rgb(203, 149, 0);
     font-size: clamp(2rem, 5vw, 4rem);
-    font-family: 'Abril FatFace', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-weight: 100;
-    max-width: 100%;
-    text-align: center;
 }
 
-.A-Propos {
+.A-Propos, .Resume {
     color: white;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    text-align: center;
-    margin-top: 20clamp();
-}
-
-.Resume {
-    color: white;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    text-align: center;
-    margin-top: 20clamp();
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin-top: clamp(10px, 2vw, 20px);
 }
 
 /* 📌 Services */
@@ -122,103 +106,76 @@ section.top-page {
 .services {
     display: flex;
     justify-content: space-evenly;
-    margin: 50clamp();
-    background-color: black;
     flex-wrap: wrap;
+    gap: clamp(20px, 5vw, 50px);
+    background-color: black;
 }
 
 .service-item {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20clamp();
     text-align: center;
+    width: clamp(200px, 20vw, 300px);
 }
 
 .delivery-icon {
     font-size: 3rem;
     color: #bd9800;
-    margin-bottom: 10clamp();
+    margin-bottom: 10px;
 }
 
 .service-details {
     font-weight: 600;
-    width: 200clamp();
-    text-align: center;
-    color: #ffffff;
+    color: white;
 }
 
 /* 📌 Meilleures ventes */
 
 .section-title {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-family: 'Abril FatFace', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-weight: 100;
-    position: relative;
     color: white;
     text-align: center;
-    margin-bottom: 50clamp();
-}
-
-.section-title::before {
-    content: "";
-    position: absolute;
-    background-color: #bd9800;
-    width: 50clamp();
-    height: 7clamp();
-    bottom: -10clamp();
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: clamp(30px, 5vw, 50px);
 }
 
 .bests-items {
-    margin: 50clamp();
+    margin: clamp(30px, 5vw, 50px);
     background-color: black;
 }
 
 .best-pizza {
     display: flex;
     flex-wrap: wrap;
-    gap: 20clamp();
+    gap: clamp(10px, 2vw, 20px);
     justify-content: center;
 }
 
 .pizza-box {
-    position: relative;
     background-size: cover;
     background-position: center;
-    min-width: 300clamp();
-    height: 300clamp();
+    min-width: 250px;
+    height: 300px;
 }
 
 /* 📌 Nos pizzas */
 
-.all-products {
-    margin: 50clamp();
-}
-
 .pizza-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250clamp(), 1fr));
-    gap: 20clamp();
-}
-
-.pizza-grid .pizza-box {
-    height: 250clamp();
-    background-size: cover;
-    background-position: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(10px, 2vw, 20px);
 }
 
 /* 📌 Nous contacter */
 
-.surplace,
-.numero,
-.adresse {
+.surplace, .numero, .adresse {
     color: #bd9800;
     text-align: center;
     font-weight: bold;
     font-size: clamp(1rem, 2vw, 1.2rem);
-    margin: 10clamp() 0;
+    margin: clamp(10px, 2vw, 20px) 0;
 }
 
 /* 📌 Pied de page */
@@ -227,7 +184,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20clamp();
+    margin: clamp(20px, 5vw, 50px);
     font-weight: 600;
     background-color: black;
     color: white;
@@ -236,7 +193,7 @@ footer {
 footer a.cgv {
     text-decoration: none;
     color: white;
-    margin-top: 10clamp();
+    margin-top: clamp(10px, 2vw, 20px);
 }
 
 /* 📌 Responsive Design */
@@ -247,10 +204,6 @@ footer a.cgv {
         align-items: center;
     }
 
-    header.header img {
-        width: 120clamp();
-    }
-
     .big-title {
         font-size: 2.5rem;
     }
@@ -259,12 +212,8 @@ footer a.cgv {
         flex-direction: column;
     }
 
-    .service-item {
-        margin: 20clamp() 0;
-    }
-
     .pizza-box {
-        height: 200clamp();
+        height: 200px;
         min-width: 100%;
     }
 
@@ -278,18 +227,7 @@ footer a.cgv {
         font-size: 2rem;
     }
 
-    .A-Propos,
-    .Resume {
-        font-size: 1rem;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .surplace,
-    .numero,
-    .adresse {
+    .A-Propos, .Resume {
         font-size: 1rem;
     }
 }
