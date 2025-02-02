@@ -23,11 +23,11 @@ header.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5clamp();
 }
 
 header.header img {
-    width: 150px;
+    width: 50clamp();
     max-width: 100%;
 }
 
@@ -37,13 +37,13 @@ nav.nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 20px;
+    gap: 20clamp();
 }
 
 nav.nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 20clamp();
 }
 
 nav.nav li a {
@@ -66,11 +66,11 @@ nav.nav li a {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 60px;
+        top: 60clamp();
         left: 0;
         width: 100%;
         text-align: center;
-        padding: 20px 0;
+        padding: 20clamp() 0;
     }
 
     nav.nav ul.show {
@@ -88,7 +88,7 @@ section.top-page {
     background: url('image/pizzatop.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
-    padding: 25px;
+    padding: 25clamp();
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,14 +107,14 @@ section.top-page {
     color: white;
     font-size: clamp(1.5rem, 3vw, 2rem);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20clamp();
 }
 
 .Resume {
     color: white;
     font-size: clamp(1rem, 2vw, 1.2rem);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20clamp();
 }
 
 /* 📌 Services */
@@ -122,7 +122,7 @@ section.top-page {
 .services {
     display: flex;
     justify-content: space-evenly;
-    margin: 50px;
+    margin: 50clamp();
     background-color: black;
     flex-wrap: wrap;
 }
@@ -131,19 +131,19 @@ section.top-page {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 20clamp();
     text-align: center;
 }
 
 .delivery-icon {
     font-size: 3rem;
     color: #bd9800;
-    margin-bottom: 10px;
+    margin-bottom: 10clamp();
 }
 
 .service-details {
     font-weight: 600;
-    width: 200px;
+    width: 200clamp();
     text-align: center;
     color: #ffffff;
 }
@@ -157,29 +157,29 @@ section.top-page {
     position: relative;
     color: white;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 50clamp();
 }
 
 .section-title::before {
     content: "";
     position: absolute;
     background-color: #bd9800;
-    width: 50px;
-    height: 7px;
-    bottom: -10px;
+    width: 50clamp();
+    height: 7clamp();
+    bottom: -10clamp();
     left: 50%;
     transform: translateX(-50%);
 }
 
 .bests-items {
-    margin: 50px;
+    margin: 50clamp();
     background-color: black;
 }
 
 .best-pizza {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20clamp();
     justify-content: center;
 }
 
@@ -187,24 +187,24 @@ section.top-page {
     position: relative;
     background-size: cover;
     background-position: center;
-    min-width: 300px;
-    height: 300px;
+    min-width: 300clamp();
+    height: 300clamp();
 }
 
 /* 📌 Nos pizzas */
 
 .all-products {
-    margin: 50px;
+    margin: 50clamp();
 }
 
 .pizza-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250clamp(), 1fr));
+    gap: 20clamp();
 }
 
 .pizza-grid .pizza-box {
-    height: 250px;
+    height: 250clamp();
     background-size: cover;
     background-position: center;
 }
@@ -218,7 +218,7 @@ section.top-page {
     text-align: center;
     font-weight: bold;
     font-size: clamp(1rem, 2vw, 1.2rem);
-    margin: 10px 0;
+    margin: 10clamp() 0;
 }
 
 /* 📌 Pied de page */
@@ -227,7 +227,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 20clamp();
     font-weight: 600;
     background-color: black;
     color: white;
@@ -236,7 +236,7 @@ footer {
 footer a.cgv {
     text-decoration: none;
     color: white;
-    margin-top: 10px;
+    margin-top: 10clamp();
 }
 
 /* 📌 Responsive Design */
@@ -248,7 +248,7 @@ footer a.cgv {
     }
 
     header.header img {
-        width: 120px;
+        width: 120clamp();
     }
 
     .big-title {
@@ -260,11 +260,11 @@ footer a.cgv {
     }
 
     .service-item {
-        margin: 20px 0;
+        margin: 20clamp() 0;
     }
 
     .pizza-box {
-        height: 200px;
+        height: 200clamp();
         min-width: 100%;
     }
 
