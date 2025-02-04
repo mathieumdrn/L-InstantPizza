@@ -15,18 +15,15 @@ html {
 body {
     margin: 0 auto;
     background-color: black;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 /* 📌 Tête de page */
 header.header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     padding: clamp(5px, 2vw, 20px);
     margin-top: 0;
-    width: 100%;
 }
 
 header.header img {
@@ -88,7 +85,6 @@ section.top-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
 }
 
 .big-title {
@@ -96,8 +92,9 @@ section.top-page {
     font-size: clamp(2rem, 5vw, 4rem);
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 100%;
+    text-align: left;
+    margin-left: clamp(10px, 2vw, 20px);
 }
 
 .A-Propos{
@@ -112,9 +109,6 @@ section.top-page {
     font-size: clamp(1rem, 2vw, 1rem);
     text-align: center;
     margin-top: clamp(100px, 4vw, 30px);
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* 📌 Services */
@@ -169,12 +163,20 @@ section.top-page {
     transform: translateX(-50%);
 }
 
+.bests-items {
+    margin: clamp(50px, 10vw, 80px);
+    background-color: black;
+}
+
 .best-pizza {
     display: flex;
     flex-wrap: wrap;
     gap: clamp(20px, 3vw, 40px);
     justify-content: center;
 }
+
+
+
 
 .pizza-box {
     position: relative;
@@ -184,6 +186,16 @@ section.top-page {
     height: clamp(250px, 30vw, 350px);
 }
 
+.pizza1{
+    background-image: url(image/carte1.jpg);
+
+} 
+
+.pizza2{
+    background-image: url(image/carte2.jpg);
+} 
+
+
 .pizza-details {
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
@@ -191,14 +203,54 @@ section.top-page {
     width: 100%;
     bottom: 0;
     padding: 10px 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .pizza-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 30vw, 350px), 1fr));
-    gap: 20px;
+    margin: 3rem;
+    align-content: center;
 }
+
+
+.pizza-grid1{
+    background-image: url(image/margarita.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.pizza-grid2 {
+    background-image: url(image/Royal.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.pizza-grid3 {
+    background-image: url(image/chevremiel.jpg);
+    grid-column: 3/5;
+}
+
+.pizza-grid4 {
+    background-image: url(image/diovola.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.pizza-grid5 {
+    background-image: url(image/burger.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.pizza-grid6 {
+    background-image: url(image/pizzasaumon.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+
+
 
 @media (max-width: 768px) {
     header.header {
@@ -228,4 +280,39 @@ section.top-page {
     .A-Propos, .Resume {
         font-size: 1rem;
     }
+}
+
+
+/* 📌 Nous contacter */
+.surplace{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin: clamp(10px, 2vw, 20px) 0;
+}
+
+.numero, .adresse {
+    color: #bd9800;
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin: clamp(10px, 2vw, 20px) 0;
+}
+
+/* 📌 Pied de page */
+footer {
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    margin: clamp(20px, 5vw, 40px);
+    font-weight: 600;
+    background-color: black;
+    color: white;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: white;
+    margin-top: clamp(10px, 2vw, 20px);
 }
