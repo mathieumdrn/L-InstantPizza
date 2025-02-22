@@ -313,6 +313,7 @@ footer {
     font-weight: 600;
     background-color: black;
     color: white;
+    justify-content: space-between;
 }
 
 footer a.cgv {
