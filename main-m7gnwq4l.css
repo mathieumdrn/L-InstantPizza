@@ -1,0 +1,521 @@
+.wm-disabled {
+    background-image: linear-gradient(to bottom, #d8dbe7, #d2d5e1, #ccd0dc, #c6cad6, #c0c5d1) !important;
+    box-shadow: none !important;
+    color: #7683a8 !important
+}
+
+h1,h2,h3,h4,h5,h6,p,address,ul,li,figure,body {
+    margin: 0;
+    padding: 0
+}
+
+section,footer {
+    margin: -1px 0 0 0
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.wm-disabled {
+    background-image: linear-gradient(to bottom, #d8dbe7, #d2d5e1, #ccd0dc, #c6cad6, #c0c5d1) !important;
+    box-shadow: none !important;
+    color: #7683a8 !important
+}
+
+h1,h2,h3,h4,h5,h6,p,address,ul,li,figure,body {
+    margin: 0;
+    padding: 0
+}
+
+section,footer {
+    margin: -1px 0 0 0
+}
+
+.hint-text {
+    opacity: 0.5
+}
+
+.light-content:hover {
+    box-shadow: 0px 0px 0px 1px white
+}
+
+.light-content:focus {
+    outline: white solid 1px
+}
+
+.dark-content:hover {
+    box-shadow: 0px 0px 0px 1px #363F5A
+}
+
+.dark-content:focus {
+    outline: #363F5A solid 1px
+}
+
+.warning-near:focus {
+    outline: #F7CF06 solid 2px
+}
+
+.warning-max:focus {
+    outline: #FF4C4C solid 2px
+}
+
+.sm-word-wrap {
+    position: relative;
+    white-space: pre-line
+}
+
+.selectable {
+    -webkit-user-select: text;
+    user-select: text
+}
+
+.underline-inherit * {
+    text-decoration: inherit
+}
+
+.wm-disabled {
+    background-image: linear-gradient(to bottom, #d8dbe7, #d2d5e1, #ccd0dc, #c6cad6, #c0c5d1) !important;
+    box-shadow: none !important;
+    color: #7683a8 !important
+}
+
+h1,h2,h3,h4,h5,h6,p,address,ul,li,figure,body {
+    margin: 0;
+    padding: 0
+}
+
+section,footer {
+    margin: -1px 0 0 0
+}
+
+.LazyLoad {
+    height: 100%
+}
+
+h1,h2,h3,h4,h5,h6,p,address,ul,li,figure,body {
+    margin: 0;
+    padding: 0
+}
+
+u {
+    text-decoration: underline !important
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif
+}
+
+div:focus:hover {
+    outline: 0
+}
+
+button:focus {
+    outline: 0
+}
+
+textarea,input,button {
+    font-family: 'Montserrat', sans-serif
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    -webkit-overflow-scrolling: touch
+}
+
+body .base-component-container {
+    position: relative
+}
+
+p {
+    word-break: break-word
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.rf-website-maker {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.rf-website-maker .rf-website-maker-container {
+    display: flex;
+    height: calc(100% - 55px)
+}
+
+@media only screen and (max-width: 768px) {
+    .rf-website-maker .rf-website-maker-container {
+        height:calc(100% - 43px);
+        flex-direction: column-reverse
+    }
+}
+
+.rf-website-maker .components-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.rf-website-maker .components-container .components-header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 6px 12px 0 rgba(0,82,224,0.1);
+    padding: 16px 20px;
+    border-bottom: 1px solid #cfe0ff
+}
+
+.rf-website-maker .components-container .components-header .header-title {
+    color: #363f5a;
+    font-weight: 600
+}
+
+.rf-website-maker .components-container .components-header .close-icon {
+    position: absolute;
+    right: 0;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    color: #363f5a
+}
+
+.rf-website-maker .components-container .components-body {
+    display: flex;
+    background-color: #eef5ff;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+
+@media only screen and (max-width: 768px) {
+    .rf-website-maker .components-container .components-body {
+        flex-direction:column
+    }
+}
+
+.rf-website-maker .components-container .component-menu-sidebar {
+    user-select: none;
+    width: 240px;
+    flex: none;
+    background-color: white;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 12px rgba(56,125,255,0.2);
+    margin-right: 10px
+}
+
+.rf-website-maker .components-container .component-menu-sidebar .sideBar-categories-wrapper {
+    overflow-y: auto
+}
+
+@media only screen and (max-width: 768px) {
+    .rf-website-maker .components-container .component-menu-sidebar {
+        width:100%
+    }
+}
+
+.wm-btn {
+    padding: 0 25px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 38px;
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 400;
+    background-repeat: no-repeat !important
+}
+
+.wm-btn.white {
+    background-image: linear-gradient(0deg, #F5FAFE 6%, #fff 100%);
+    border: 1px solid #EEF5FF;
+    box-sizing: border-box;
+    box-shadow: 0 4px 16px 0 rgba(0,82,224,0.15);
+    color: #363F5A
+}
+
+.wm-btn.white:hover {
+    background-image: linear-gradient(0deg, #fff 8%, #fff 100%) !important;
+    border: 1px solid #EEF5FF;
+    background: #ffffff;
+    box-shadow: 0 4px 16px 0 rgba(0,82,224,0.15);
+    color: #727A83
+}
+
+.wm-btn.white:active {
+    box-shadow: unset;
+    background-image: linear-gradient(0deg, #E9F5FF 6%, #fff 100%);
+    border: 1px solid #EEF5FF
+}
+
+.wm-btn.white:focus {
+    color: #363F5A
+}
+
+.wm-btn.blue {
+    background-image: linear-gradient(-179deg, #5690FF 0%, #387DFF 97%);
+    box-shadow: 0 3px 16px 0 rgba(56,125,255,0.5);
+    color: #ffffff
+}
+
+.wm-btn.blue:hover {
+    box-shadow: 0 3px 16px 0 rgba(56,125,255,0.5);
+    background-image: linear-gradient(-179deg, #6EA0FF 5%, #518DFF 97%);
+    color: #ffffff
+}
+
+.wm-btn.blue:active {
+    box-shadow: unset;
+    background-image: linear-gradient(-179deg, #4D88F9 0%, #206CFD 96%)
+}
+
+.wm-btn.blue:focus {
+    color: #ffffff
+}
+
+.wm-btn.orange {
+    background: linear-gradient(to bottom, #ffa330, #ff9346, #ff8559, #fb7a6a, #f07379);
+    box-shadow: 0 3px 16px 0 rgba(243,124,108,0.5);
+    color: #ffffff
+}
+
+.wm-btn.orange:hover {
+    box-shadow: 0 3px 16px 0 rgba(243,124,108,0.5);
+    background-image: linear-gradient(to bottom, #ffb04e, #ffa159, #ff9367, #ff8775, #ff7e84);
+    color: #ffffff
+}
+
+.wm-btn.orange:active {
+    opacity: 1;
+    box-shadow: unset;
+    background-image: linear-gradient(to bottom, #ff991a, #ff8a36, #ff7d4c, #ff725f, #fe6a71)
+}
+
+.wm-btn.orange:focus {
+    color: #ffffff
+}
+
+.socials-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socials-wrapper {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-container {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-container {
+    flex: 1 1 calc(25% - 20px); /* 4 images par ligne */
+    max-width: calc(25% - 20px);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-container {
+    flex: 1 1 calc(25% - 20px); /* 4 images par ligne */
+    max-width: calc(25% - 20px);
+    background-color: black; /* Fond noir autour des images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 4/3; /* Ajuste la proportion des images */
+}
+
+.image-container img {
+    width: auto;
+    height: 100%;
+    object-fit: contain; /* Garde l'image entière sans déformation */
+    transition: transform 0.3s ease-in-out;
+    background-color: black; /* Assure que l'image ne dépasse pas sur d'autres couleurs */
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0; /* Supprime l’espace entre les images */
+    justify-content: center;
+    padding: 0;
+    background-color: black; /* Fond noir pour joindre les images */
+    padding: 10px 0; /* Ajoute une légère marge pour séparer du reste */
+}
+
+.image-container {
+    flex: 1 1 calc(25% - 10px); /* 4 images par ligne */
+    max-width: calc(25% - 10px);
+    background-color: black; /* Fond noir autour des images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 4/3; /* Ratio uniforme */
+    transform: scale(1.3); /* Augmente la taille de 30% */
+}
+
+.image-container img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    background-color: black;
+}
+
+.image-container img:hover {
+    transform: scale(1.15); /* Effet de zoom conservé */
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0; /* Supprime l’espace entre les images */
+    justify-content: center;
+    padding: 0;
+    background-color: black; /* Fond noir pour joindre les images */
+    padding: 10px 0; /* Ajoute une légère marge pour séparer du reste */
+}
+
+.image-container {
+    flex: 1 1 calc(25% - 10px); /* 4 images par ligne */
+    max-width: calc(25% - 10px);
+    background-color: black; /* Fond noir autour des images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 4/3; /* Ratio uniforme */
+}
+
+/* 🌟 PREMIÈRE LIGNE : Taille augmentée */
+.image-gallery:first-of-type .image-container {
+    flex: 1 1 calc(33.333% - 10px); /* Augmente la hauteur */
+    max-width: calc(33.333% - 10px);
+}
+
+/* 🌟 DEUXIÈME LIGNE : Reste à 130% */
+.image-gallery:last-of-type .image-container {
+    transform: scale(1.3); /* Augmente la taille de 30% */
+}
+
+.image-container img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    background-color: black;
+}
+
+.image-container img:hover {
+    transform: scale(1.15); /* Effet de zoom conservé */
+}
