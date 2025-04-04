@@ -1,0 +1,297 @@
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Défilement fluide et gestion du décalage */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Ajuste cette valeur à la hauteur de ton header fixe */
+}
+
+body {
+  background-color: #000;      /* Fond noir */
+  color: #D4AF37;              /* Texte doré */
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+/* --- Header et navigation --- */
+.site-header {
+  background: #000; /* Header en noir */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(212,175,55,0.2);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  height: 50px;
+}
+
+/* Sélecteur de langue */
+.language-selector {
+  font-size: 0.9rem;
+}
+
+.language-selector a {
+  text-decoration: none;
+  color: #D4AF37;
+  padding: 2px 5px;
+  transition: background 0.3s;
+}
+
+.language-selector a.active,
+.language-selector a:hover {
+  background: #D4AF37;
+  color: #000;
+  border-radius: 3px;
+}
+
+/* Navigation */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #D4AF37;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #F1C40F; /* Doré plus lumineux */
+}
+
+/* Pour éviter que le contenu ne soit masqué par le header fixe */
+main {
+  padding-top: 80px;
+}
+
+/* --- Section Hero --- */
+.hero {
+  background: url("image/IMG_9094.jpg") center center / cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 80px; /* Pour compenser le header fixe */
+  position: relative;
+}
+
+/* Optionnel : Overlay sombre pour améliorer la lisibilité du texte */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Couche sombre */
+}
+
+.hero-content {
+  position: relative; /* Pour que le texte soit au-dessus de l'overlay */
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #D4AF37;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #D4AF37;
+}
+
+/* --- Sections du Main --- */
+main section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #000; /* Fond noir */
+}
+
+main section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #D4AF37;
+}
+
+main section p {
+  color: #D4AF37;
+}
+
+/* =========================
+   NOUVELLES RÈGLES POUR LE MENU
+   ========================= */
+
+/* Section Menu : titre et conteneur */
+#menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Conteneur des images du menu */
+.menu-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style pour les images du menu */
+.menu-img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #D4AF37;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.menu-img:hover {
+  transform: scale(1.02);
+}
+
+/* --- Section Galerie --- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* --- Section Localisation --- */
+.map-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  position: relative;
+  margin-top: 20px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* --- Section Contact --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form label {
+  font-weight: bold;
+  color: #D4AF37;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #D4AF37;
+  border-radius: 4px;
+  background: #222;
+  color: #D4AF37;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  background: #D4AF37;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #F1C40F;
+}
+
+/* --- Footer --- */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #D4AF37;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .navbar li {
+    margin: 10px 0;
+  }
+  .hero {
+    height: 40vh;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .menu-img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-logo {
+    height: 40px;
+  }
+  .navbar li {
+    margin: 8px 0;
+  }
+  main section {
+    padding: 30px 10px;
+  }
+}
